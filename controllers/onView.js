@@ -1,6 +1,3 @@
-let api = require('./config/config').api;
-let oapi = require('./config/config').oapi;
-
 const handleView = fetch => (req,res) => {
 
     const{idMovie} = req.body;

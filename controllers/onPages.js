@@ -1,5 +1,3 @@
-let api = require('./config/config').api;
-
 const handleTrendingPages = fetch => (req,res) => {
 
     const{id} = req.body;

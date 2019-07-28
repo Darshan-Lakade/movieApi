@@ -1,5 +1,3 @@
-let api = require('./config/config').api;
-
 const handleSearchMovie = fetch => (req,res) => {
 
     const{SearchField} = req.body;

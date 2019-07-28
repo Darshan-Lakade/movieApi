@@ -1,5 +1,3 @@
-let api = require('./config/config').api;
-
 let common = ''
 
 const handleGenre = fetch => (req,res) => {
