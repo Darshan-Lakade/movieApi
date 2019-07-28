@@ -28,5 +28,5 @@ app.post('/view', onView.handleView(fetch));
 app.post('/viewupdate', onView.handleViewUpdate(fetch));
 
  app.listen(process.env.PORT || 3000, function(){
-    console.log(`server running on port ${process.env.PORT}`)
+    console.log(`server running on Port ${process.env.PORT}`)
  });
