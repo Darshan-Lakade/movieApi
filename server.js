@@ -13,6 +13,14 @@ var app = express();
 app.use(cors());
 app.use(bodyparser.json());
 
+app.all('*', function(req, res, next) {
+   var origin = req.get('origin'); 
+   res.header('Access-Control-Allow-Origin', origin);
+   res.header("Access-Control-Allow-Headers", "X-Requested-With");
+   res.header('Access-Control-Allow-Headers', 'Content-Type');
+   next();
+});
+
 app.get('/', (req,res) => { res.send('Server is Running')})
 
 app.post('/trending', onLoad.handleOnLoad(fetch));
