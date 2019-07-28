@@ -1,5 +1,5 @@
 let common = ''
-const api = process.env.api;
+const api = require('../controllers/config/config').api;
 
 const handleGenre = fetch => (req,res) => {
 

@@ -1,4 +1,4 @@
-const api = process.env.api;
+const api = require('../controllers/config/config').api;
 
 const handleOnLoad = fetch => (req,res) => {
 
