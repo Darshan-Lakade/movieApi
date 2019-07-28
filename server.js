@@ -27,6 +27,6 @@ app.post('/pagesgenre', onPages.handleGenrePages(fetch));
 app.post('/view', onView.handleView(fetch));
 app.post('/viewupdate', onView.handleViewUpdate(fetch));
 
- app.listen(3001, function(){
-    console.log('server running on port 3000')
+ app.listen(process.env.PORT, function(){
+    console.log(`server running on port ${process.env.PORT}`)
  });
