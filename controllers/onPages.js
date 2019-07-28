@@ -1,4 +1,4 @@
-const api = require('../controllers/config/config').api;
+const api = process.env.API_KEY;
 
 const handleTrendingPages = fetch => (req,res) => {
 

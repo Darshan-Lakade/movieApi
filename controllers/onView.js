@@ -1,5 +1,5 @@
-const api = require('../controllers/config/config').api;
-const oapi = require('../controllers/config/config').oapi;
+const api = process.env.API_KEY;
+const oapi =  process.env.OAPI_KEY;
 
 const handleView = fetch => (req,res) => {
 
