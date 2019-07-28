@@ -1,4 +1,4 @@
 module.exports = {
-    api:process.env.API,
-    oapi:process.env.OAPI
+    api:process.env.API_KEY,
+    oapi:process.env.OAPI_KEY
 }
