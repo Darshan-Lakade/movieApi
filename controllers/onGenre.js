@@ -1,4 +1,5 @@
 let common = ''
+const api = process.env.api;
 
 const handleGenre = fetch => (req,res) => {
 

@@ -1,3 +1,5 @@
+const api = process.env.api;
+
 const handleOnLoad = fetch => (req,res) => {
 
     fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${api}`)

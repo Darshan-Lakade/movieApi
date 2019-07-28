@@ -1,3 +1,5 @@
+const api = process.env.api;
+
 const handleTrendingPages = fetch => (req,res) => {
 
     const{id} = req.body;

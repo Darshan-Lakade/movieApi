@@ -1,3 +1,5 @@
+const api = process.env.api;
+
 const handleSearchMovie = fetch => (req,res) => {
 
     const{SearchField} = req.body;

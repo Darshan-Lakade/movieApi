@@ -1,3 +1,6 @@
+const api = process.env.api;
+const oapi = process.env.oapi;
+
 const handleView = fetch => (req,res) => {
 
     const{idMovie} = req.body;
